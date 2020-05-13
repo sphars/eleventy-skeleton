@@ -1,0 +1,5 @@
+# The built site files
+dist/
+
+# Dependency folder
+node_modules/

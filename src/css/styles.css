@@ -1,0 +1,13 @@
+:root{
+    --color: #0c60a5;
+    --color-secondary: #118bee;
+
+}
+
+header,footer,main{
+    padding: 1rem;
+}
+
+nav{
+    margin-bottom: 1rem;
+}
