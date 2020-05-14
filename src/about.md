@@ -1,6 +1,6 @@
 ---
 title: About Me
-layout: layouts/regular.liquid
+layout: layouts/_regular.njk
 ---
 
 # {{ title }}

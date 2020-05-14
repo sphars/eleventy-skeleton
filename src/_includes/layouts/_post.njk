@@ -1,0 +1,9 @@
+---
+layout: layouts/_base.njk
+---
+
+<h1>{{ title }}</h1>
+
+<p>By {{ author or metadata.author }}</p>
+
+{{ content | safe }}

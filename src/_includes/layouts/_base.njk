@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    {% include head.liquid %}
+    {% include './_head.njk' %}
 </head>
 <body>
     <header>
         <!-- header here -->
-        {% include header.liquid %}
+        {% include './_header.njk' %}
     </header>
 
     <main>
-        {{ content }}
+        {{ content | safe }}
     </main>
 
     <footer>
         <!-- footer here -->
-        {% include footer.liquid %}
+        {% include './_footer.njk' %}
     </footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 title: Homepage
-layout: layouts/regular.liquid
+layout: layouts/_regular.njk
 ---
 
 # Welcome!
