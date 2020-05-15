@@ -1,6 +1,9 @@
 module.exports = function(eleventyConfig) {
 
     eleventyConfig.setDataDeepMerge(true);
+
+    //copy static files directly, with same directory structure
+    eleventyConfig.addPassthroughCopy("src/assets");
     
     // config objects
     return {
@@ -14,7 +17,6 @@ module.exports = function(eleventyConfig) {
             "md",
             "html",
             "njk"
-        ],
-        passthroughFileCopy: true
+        ]
     };
 };

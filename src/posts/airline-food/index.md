@@ -14,4 +14,4 @@ I should know, I ate it once.
 
 Pretzels, peanuts and ginger ale. That's all you need.
 
-![Pretzels](pretzels.jpg)
+![Pretzels](/assets/img/pretzels.jpg)
