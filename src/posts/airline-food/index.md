@@ -3,7 +3,7 @@ title: Airline Food
 description: Thoughts about airline food
 author: Jerry
 date: 2020-05-12
-tags: [posts, humor]
+tags: [humor]
 ---
 
 What's the deal with airline food? It's terrible!  
