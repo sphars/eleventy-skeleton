@@ -1,9 +1,5 @@
 module.exports = function(eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy("src/js");
-    eleventyConfig.addPassthroughCopy("src/css");
-    eleventyConfig.addPassthroughCopy("src/img");
-
     eleventyConfig.setDataDeepMerge(true);
     
     // config objects
@@ -18,6 +14,7 @@ module.exports = function(eleventyConfig) {
             "md",
             "html",
             "njk"
-        ]
+        ],
+        passthroughFileCopy: true
     };
 };
