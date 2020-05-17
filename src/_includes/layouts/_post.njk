@@ -2,8 +2,17 @@
 layout: layouts/_base.njk
 ---
 
-<h1>{{ title }}</h1>
-
-<p>By {{ author or metadata.author }}</p>
-
-{{ content | safe }}
+<article class="post">
+    <h1>{{ title }}</h1>
+    <time datetime="{{ date | dateISO }}">{{ date | datePretty}}</time>
+    <div class="tags">
+        tagged:
+        {% for tag in tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+    </div>
+    
+    <p>By {{ author or metadata.author }}</p>
+    
+    {{ content | safe }}
+</div>
