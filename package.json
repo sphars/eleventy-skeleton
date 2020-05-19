@@ -6,7 +6,8 @@
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "clean": "rm -r dist"
   },
   "keywords": [],
   "author": "Spencer Harston",
@@ -14,6 +15,6 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "moment": "^2.25.3",
-    "mvp.css": "^1.6.1"
+    "mvp.css": "^1.6.2"
   }
 }

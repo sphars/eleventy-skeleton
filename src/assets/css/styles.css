@@ -28,6 +28,7 @@ ul.post-entries .post-list-entry time{
 /* post pages */
 article.post h1{
     margin-bottom: 0;
+    font-size: 2em;
 }
 article.post time{
     color: var(--color-text-secondary);
