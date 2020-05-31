@@ -1,18 +1,27 @@
 ---
 layout: layouts/_base.njk
 ---
+{% from "macros/tags-list.njk" import tagsList %}
 
 <article class="post">
-    <h1>{{ title }}</h1>
-    <time datetime="{{ date | dateISO }}">{{ date | datePretty}}</time>
-    <div class="tags">
-        tagged:
-        {% for tag in tags %}
-        <span class="tag">{{ tag }}</span>
-        {% endfor %}
+    <header class="post-header">
+        <h1>{{ title }}</h1>
+        <div class="post-meta">
+            <div class="post-meta-dates">
+                Published: <time datetime="{{ date | dateISO }}">{{ date | datePretty}}</time>
+                {% if updated %}
+                <br>Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty}}</time>
+                {% endif %}
+            </div>
+            <div class="post-meta-tags">
+                Tagged: {{ tagsList(tags) }}
+            </div>
+        </div>
+    </header>
+    
+    <hr>
+    
+    <div class="post-content">
+        {{ content | safe }}
     </div>
-    
-    <p>By {{ author or metadata.author }}</p>
-    
-    {{ content | safe }}
 </article>

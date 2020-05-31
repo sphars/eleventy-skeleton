@@ -1,0 +1,16 @@
+---
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+    filter: ['all', 'posts', 'tagList']
+layout: layouts/_base.njk
+permalink: /tags/{{ tag }}/
+renderData:
+    title: Posts tagged {{ tag }}
+---
+{% from "macros/posts-list.njk" import postsList %}
+
+<h1>Posts tagged {{ tag }}</h1> 
+
+{{ postsList(collections[tag]) }}

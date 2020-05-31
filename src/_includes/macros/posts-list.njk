@@ -1,0 +1,15 @@
+{%- macro postsList(posts) -%}
+<ul class="post-list">
+    {% for post in posts %}
+    <li class="post-list-item">
+        <a class="post-list-item-title" href="{{ post.url }}">{{ post.data.title }}</a>
+        <p class="post-list-item-exerpt">
+            This is a post excerpt.
+        </p>
+        <div class="post-list-item-meta">
+            <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endmacro %}

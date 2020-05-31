@@ -1,21 +1,18 @@
 ---
-title: Posts
+title: All Posts
 layout: layouts/_regular.njk
 eleventyExcludeFromCollections: true
 ---
+{% from "macros/posts-list.njk" import postsList %}
 
 <h1>{{ title }}</h1>
 
-<ul class="post-entries">
-    {% for post in collections.posts %}
-    <li>
-        <div class="post-list-entry">
-            <div class="post-entry-title">
-                <a href="{{ post.url }}">{{ post.data.title }}</a>
-            </div>
-            <div class="post-entry-date">
-                <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time></li>
-            </div>
-        </div>
+<div>
+    Filter by:
+    {% for tag in collections.tagList %}
+    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <a href="{{ tagUrl }}" class="post-meta-tags-tag">{{ tag }}</a>
     {% endfor %}
-</ul>
+</div>
+
+{{ postsList(collections.posts) }}

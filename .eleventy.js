@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
     // allows templates to add additional data
     eleventyConfig.setDataDeepMerge(true);
 
-    //copy static files directly, with same directory structure
+    // copy static files directly, with same directory structure
     eleventyConfig.addPassthroughCopy("src/assets");
 
     // config objects
@@ -15,6 +15,14 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter('datePretty', date => {
         return moment(date).format('LL'); // e.g. May 16, 2020
+    });
+
+    // add collection of tags
+    eleventyConfig.addCollection("tagList", require("./js/tag-list.js"));
+
+    // create custom collection of posts
+    eleventyConfig.addCollection("posts", collection => {
+        return collection.getFilteredByGlob('./src/posts/*.md');
     });
     
     return {

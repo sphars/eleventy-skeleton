@@ -3,7 +3,10 @@ title: Airline Food
 description: Thoughts about airline food
 author: Jerry
 date: 2020-05-12
-tags: [humor]
+updated: 2020-05-30
+tags:
+    - humor
+    - food
 ---
 
 What's the deal with airline food? It's terrible!  
@@ -33,8 +36,6 @@ Pretzels, peanuts and ginger ale. That's all you need.
 ### Blockquote
 
 > This is a quote by someone
->
->> I don't know who.
 
 ### Tasks?
 - [ ] What?

@@ -1,0 +1,6 @@
+{%- macro tagsList(tags) -%}
+    {% for tag in tags %}
+    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <a href="{{ tagUrl }}" class="post-meta-tags-tag">{{ tag }}</a>
+    {% endfor %}
+{% endmacro %}
