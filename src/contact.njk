@@ -5,13 +5,13 @@ layout: layouts/_regular.njk
 
 <h1>{{ title }}</h1>
 
-<form>
+<form name="contact" method="POST" data-netlify="true">
     <label for="name">
-        Name: <input type="text" id="name" name="vistor_name"/>
+        Name: <input type="text" id="name" name="name"/>
     </label>   
 
     <label for="email">
-        Email: <input type="text" id="email" name="vistor_email"/>
+        Email: <input type="text" id="email" name="email"/>
     </label>
     
     <button type="submit">Send</button>
