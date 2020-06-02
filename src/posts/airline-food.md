@@ -9,7 +9,8 @@ tags:
     - food
 ---
 
-What's the deal with airline food? It's terrible!  
+What's the deal with airline food? It's terrible!
+<!-- excerpt -->
 
 I should know, I ate it once.
 
@@ -21,6 +22,7 @@ Pretzels, peanuts and ginger ale. That's all you need.
 
 ### Get Some Code
 `thisiscode()`
+
 ```html
 <a href="#">Some link</a>
 ```
@@ -37,8 +39,7 @@ Pretzels, peanuts and ginger ale. That's all you need.
 
 > This is a quote by someone
 
-### Tasks?
-- [ ] What?
-- [x] Done.
-
-:tent:
+### List
+- List item 1
+- List item 2
+- List item 3

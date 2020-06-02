@@ -4,7 +4,8 @@
     <li class="post-list-item">
         <a class="post-list-item-title" href="{{ post.url }}">{{ post.data.title }}</a>
         <p class="post-list-item-exerpt">
-            This is a post excerpt.
+            {{ post.data.post_excerpt }}
+            <i><a href="{{ post.url }}">Read more...</a></i>
         </p>
         <div class="post-list-item-meta">
             <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time>

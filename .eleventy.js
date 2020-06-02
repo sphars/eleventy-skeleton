@@ -8,6 +8,13 @@ module.exports = function(eleventyConfig) {
     // copy static files directly, with same directory structure
     eleventyConfig.addPassthroughCopy("src/assets");
 
+    // parse excerpts on posts
+    eleventyConfig.setFrontMatterParsingOptions({
+        excerpt: true,
+        excerpt_separator: "<!-- excerpt -->",
+        excerpt_alias: "post_excerpt"
+    });
+
     // config objects
     eleventyConfig.addFilter('dateISO', date => {
         return moment(date).toISOString();
