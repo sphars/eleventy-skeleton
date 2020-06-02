@@ -1,4 +1,5 @@
 :root{
+    /* Custom variable values here */
 }
 
 .post-list {
@@ -36,5 +37,5 @@
 }
 
 .post-meta-tags-tag{
-    margin: 0 3px;
+    margin: 0 2px;
 }

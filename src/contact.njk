@@ -5,14 +5,25 @@ layout: layouts/_regular.njk
 
 <h1>{{ title }}</h1>
 
-<form name="contact" method="POST" data-netlify="true">
-    <label for="name">
-        Name: <input type="text" id="name" name="name"/>
-    </label>   
+<p>This contact page is a good place to put you contact information here. As an example, a form below is included, that allows visitors to share their email address and thoughts. Since this site is hosted on Netlify, it uses their forms function to collect that information. See <a href="https://docs.netlify.com/forms/setup/">Netlify's documentation</a> for more information.</p>
 
-    <label for="email">
-        Email: <input type="text" id="email" name="email"/>
-    </label>
+<form name="contact" method="POST" data-netlify="true">
+    <div>    
+        <label for="name">Name</label>   
+        <input type="text" id="name" name="name" autocomplete="name" />
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" autocomplete="email" />
+    </div>
+
+    <div>
+        <label for="thoughts">Thoughts</label>
+        <textarea id="thoughts" rows="5" name="thoughts" placeholder="share your thoughts..."></textarea>
+    </div>
     
-    <button type="submit">Send</button>
+    <div>
+        <button type="submit">Send</button>
+    </div>
 </form>

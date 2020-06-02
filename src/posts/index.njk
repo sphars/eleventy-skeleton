@@ -7,8 +7,12 @@ eleventyExcludeFromCollections: true
 
 <h1>{{ title }}</h1>
 
+<p>This is the Posts page, where all the posts that you've written are listed. In this case, a custom collection called <code>posts</code> is used to populate the list. The collection is defined in the <code>.eleventy.js</code> configuration file. It looks for any markdown file in the <code>./src/posts/</code> directory. The list is generated any time the site is rebuilt.</p>
+
+<hr>
+
 <div>
-    Filter by:
+    Filter posts by:
     {% for tag in collections.tagList %}
     {% set tagUrl %}/tags/{{ tag }}/{% endset %}
     <a href="{{ tagUrl }}" class="post-meta-tags-tag">{{ tag }}</a>
