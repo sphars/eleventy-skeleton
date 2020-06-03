@@ -4,7 +4,7 @@ A simple, basic site built using [Eleventy](https://www.11ty.dev/) with [YACCK](
 
 [See it live](https://amazing-albattani-32448d.netlify.app/)
 
-## Install and Run
+## Local Install and Run
 
 Coming soon. Still finalizing...
 
