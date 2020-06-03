@@ -15,13 +15,14 @@ module.exports = function(eleventyConfig) {
         excerpt_alias: "post_excerpt"
     });
 
-    // config objects
+    // filter to return a date as ISO string objects
     eleventyConfig.addFilter('dateISO', date => {
         return moment(date).toISOString();
     });
 
+    // filter to return a date for prettier display. Uses UTC to avoid timezone differences
     eleventyConfig.addFilter('datePretty', date => {
-        return moment(date).format('LL'); // e.g. May 16, 2020
+        return moment(date).utc().format('LL'); // e.g. May 16, 2020
     });
 
     // add collection of tags
