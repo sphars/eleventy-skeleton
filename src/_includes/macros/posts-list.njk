@@ -1,6 +1,8 @@
 {%- macro postsList(posts) -%}
+{%- from "macros/tags-list.njk" import tagsList %}
+
 <ul class="post-list">
-    {% for post in posts %}
+    {% for post in posts | reverse %}
     <li class="post-list-item">
         <a class="post-list-item-title" href="{{ post.url }}">{{ post.data.title }}</a>
         <p class="post-list-item-exerpt">
@@ -9,10 +11,7 @@
         </p>
         <div class="post-list-item-meta">
             <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time>
-            {% for tag in post.data.tags %}
-            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-            <a href="{{ tagUrl }}" class="post-meta-tags-tag">{{ tag }}</a>
-            {% endfor %}        
+            {{ tagsList(post.data.tags) }}
         </div>
     </li>
     {% endfor %}

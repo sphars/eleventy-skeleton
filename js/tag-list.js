@@ -12,5 +12,5 @@ module.exports = function(collection) {
             tag.startsWith('_') || uniqueTags.add(tag);
     });
 
-    return [...uniqueTags];
+    return [...uniqueTags].sort();
 };
