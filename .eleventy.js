@@ -25,7 +25,18 @@ module.exports = function(eleventyConfig) {
         return moment(date).utc().format('LL'); // e.g. May 16, 2020
     });
 
-    // add collection of tags
+    // filter to sort a list of posts by date desc
+    // https://stackoverflow.com/q/10123953
+    eleventyConfig.addFilter('sortDesc', posts => {
+        posts.sort(function(a,b){
+            a = new Date(a.date);
+            b = new Date(b.date);
+            return a > b ? -1 : a < b ? 1 : 0;
+        });
+        return posts;
+    });
+
+    // add collection of all tags
     eleventyConfig.addCollection("tagList", require("./js/tag-list.js"));
 
     // create custom collection of posts

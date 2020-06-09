@@ -4,21 +4,16 @@
     {% include 'partials/_head.njk' %}
 </head>
 <body>
-    <header>
-        {% include 'partials/_header.njk' %}
-    </header>
 
-    <nav>
-        {% include 'partials/_navigation.njk' %}
-    </nav>
+    {% include 'partials/_header.njk' %}
+
+    {% include 'partials/_navigation.njk' %}
 
     <main>
         {{ content | safe }}
     </main>
 
-    <footer>
-        {% include 'partials/_footer.njk' %}
-    </footer>
+    {% include 'partials/_footer.njk' %}
 
     {% include 'partials/_scripts.njk' %}
 </body>

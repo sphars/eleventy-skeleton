@@ -2,7 +2,7 @@
 title: Airline Food
 description: Thoughts about airline food
 author: Jerry
-date: 2020-05-12
+date: 2020-05-13
 updated: 2020-05-30
 tags:
     - humor

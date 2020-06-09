@@ -1,0 +1,39 @@
+---
+pagination:
+    data: collections.posts
+    size: 10
+    alias: posts
+    reverse: true
+layout: layouts/_base.njk
+title: All Posts
+---
+{% from "macros/posts-list.njk" import postsList %}
+
+<h1>{{ title }}</h1>
+<p class="post-meta">Number of posts: {{ collections.posts.length }}</p>
+
+<hr/>
+
+<p>This is the Posts page, where all the posts that you've written are listed. In this case, a custom collection called <code>posts</code> is used to populate the list. The collection is defined in the <code>.eleventy.js</code> configuration file. It looks for any markdown file in the <code>./src/posts/</code> directory. The list is generated any time the site is rebuilt.</p>
+
+<div>
+    Filter posts by:
+    {% for tag in collections.tagList %}
+    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <a href="{{ tagUrl }}" class="post-meta-tags-tag">{{ tag }}</a>
+    {% endfor %}
+</div>
+
+{{ postsList(pagination.items) }}
+
+<nav>
+    <ul class="page-nav">
+        <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">&lt;&lt;</a>{% else %}&lt;&lt;{% endif %}</li>
+        <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;</a>{% else %}&lt;{% endif %}</li>
+        {%- for pageEntry in pagination.pages %}
+        <li><a href="{{ pagination.hrefs[loop.index0] }}"{% if page.url == pagination.hrefs[loop.index0] %}aria-current="page"{% endif %} class="page-nav-page-num">{{ loop.index }}</a></li>
+        {% endfor -%}
+        <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">&gt;</a>{% else %}&gt;{% endif %}</li>
+        <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">&gt;&gt;</a>{% else %}&gt;&gt;{% endif %}</li>
+    </ul>
+</nav>

@@ -39,3 +39,24 @@
 .post-meta-tags-tag{
     margin: 0 2px;
 }
+
+.page-nav{
+    list-style-type: none;
+    margin: .5rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+.page-nav li{
+    display: inline-block;
+    font-size: 1.25rem;
+    margin: 0 .5rem;
+}
+
+.page-nav li .page-nav-page-num{
+    padding: .25rem .5rem;
+}
+
+[aria-current]{
+    background-color: #eee;
+}
