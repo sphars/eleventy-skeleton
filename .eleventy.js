@@ -1,3 +1,4 @@
+const pluginRSS = require('@11ty/eleventy-plugin-rss');
 const moment = require('moment');
 moment.locale('en');
 
@@ -43,6 +44,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("posts", collection => {
         return collection.getFilteredByGlob('./src/posts/*.md');
     });
+
+    // add plugins
+    eleventyConfig.addPlugin(pluginRSS);
     
     return {
         dir: {
