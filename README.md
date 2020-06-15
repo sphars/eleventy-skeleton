@@ -10,7 +10,7 @@ My personal site (coming soon)
 
 ## Status
 
-This is a work-in-progress template, but you can use it in it's current state and it'll work great. More features may be added to this (see the [current issues](https://github.com/spncrhrstn/eleventy-site/issues) for potential additions).
+This is a work-in-progress template, but you can use it in it's current state and it'll work great. More features may be added to this (see the [current issues](https://github.com/spncrhrstn/eleventy-skeleton/issues) for potential additions).
 
 I will be using this for my own personal site which will have functionality that may or may not be backported to this template.
 
@@ -18,7 +18,7 @@ I will be using this for my own personal site which will have functionality that
 
 Requirements: Node.js and NPM
 
-### 1. [Generate](https://github.com/spncrhrstn/eleventy-site/generate) a fork of this repo 
+### 1. [Generate](https://github.com/spncrhrstn/eleventy-skeleton/generate) a fork of this repo 
 
 ### 2. Clone your fork to your machine
 ```
