@@ -5,7 +5,7 @@
 A simple, basic site template built using [Eleventy](https://www.11ty.dev/) and [YACCK](https://spncrhrstn.github.io/yacck/).
 
 ## Demo
-[Netlify](https://eleventy-skeleton.netlify.app/)  
+[Demo site on Netlify](https://eleventy-skeleton.netlify.app/)  
 My personal site (coming soon)
 
 ## Status
@@ -95,7 +95,7 @@ View the [Eleventy docs](https://www.11ty.dev/docs/) for more instructions on cr
 
 ### Theming
 
-I've written a custom theme for this site using my classless CSS framework, [YACCK](https://spncrhrstn.github.io/yacck/). It also uses the Rubik and Fira Mono Google fonts. These are added by default in `./src/_includes/partials/_head.njk`. Feel free to use it, as well as the fonts if you'd like. 
+I've written a custom theme for this site using my classless CSS framework, [YACCK](https://spncrhrstn.github.io/yacck/). It also uses the Inter and Fira Mono fonts from Google fonts. These are added by default in `./src/_includes/partials/_head.njk`. Feel free to use it, as well as the fonts if you'd like. 
 
 If you don't want to use YACCK, remove the references in `_head.njk` and use whatever you'd like. The generated HTML structure follows HTML5 standard conventions and tries to keep it as simple as possible. There are some extra styles in `./src/assets/css/styles.css` you may or may not want as well.
 
