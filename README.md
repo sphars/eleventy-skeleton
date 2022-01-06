@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/afd45c80-67c8-4a6f-9c21-8860a2d5ea02/deploy-status)](https://app.netlify.com/sites/eleventy-skeleton/deploys)
 
-A simple, basic site template built using [Eleventy](https://www.11ty.dev/) and [YACCK](https://spncrhrstn.github.io/yacck/).
+A simple, basic site template built using [Eleventy](https://www.11ty.dev/) and [YACCK](https://sphars.github.io/yacck/).
 
 ## Demo
 [Demo site on Netlify](https://eleventy-skeleton.netlify.app/)  
@@ -10,7 +10,7 @@ My personal site (coming soon)
 
 ## Status
 
-This is a work-in-progress template, but you can use it in it's current state and it'll work great. More features may be added to this (see the [current issues](https://github.com/spncrhrstn/eleventy-skeleton/issues) for potential additions).
+This is a work-in-progress template, but you can use it in it's current state and it'll work great. More features may be added to this (see the [current issues](https://github.com/sphars/eleventy-skeleton/issues) for potential additions).
 
 I will be using this for my own personal site which will have functionality that may or may not be backported to this template.
 
@@ -18,7 +18,7 @@ I will be using this for my own personal site which will have functionality that
 
 Requirements: Node.js and NPM
 
-### 1. [Generate](https://github.com/spncrhrstn/eleventy-skeleton/generate) a fork of this repo 
+### 1. [Generate](https://github.com/sphars/eleventy-skeleton/generate) a fork of this repo 
 
 ### 2. Clone your fork to your machine
 ```
@@ -95,7 +95,7 @@ View the [Eleventy docs](https://www.11ty.dev/docs/) for more instructions on cr
 
 ### Theming
 
-I've written a custom theme for this site using my classless CSS framework, [YACCK](https://spncrhrstn.github.io/yacck/). The default font stack is the system font stack, pulled in from YACCK. Feel free to override this in `./src/_includes/partials/_head.njk` and in the CSS file.
+I've written a custom theme for this site using my classless CSS framework, [YACCK](https://sphars.github.io/yacck/). The default font stack is the system font stack, pulled in from YACCK. Feel free to override this in `./src/_includes/partials/_head.njk` and in the CSS file.
 
 If you don't want to use YACCK, remove the references in `_head.njk` and use whatever you'd like. The generated HTML structure follows HTML5 standard conventions and tries to keep it as simple as possible. There are some extra styles in `./src/assets/css/styles.css` you may or may not want as well.
 

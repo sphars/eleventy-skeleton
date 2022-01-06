@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spncrhrstn/eleventy-skeleton.git"
+    "url": "git+https://github.com/sphars/eleventy-skeleton.git"
   },
   "keywords": [
     "eleventy",
@@ -21,9 +21,9 @@
   "author": "Spencer Harston",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spncrhrstn/eleventy-skeleton/issues"
+    "url": "https://github.com/sphars/eleventy-skeleton/issues"
   },
-  "homepage": "https://github.com/spncrhrstn/eleventy-skeleton#readme",
+  "homepage": "https://github.com/sphars/eleventy-skeleton#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
