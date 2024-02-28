@@ -1,12 +1,11 @@
 # Eleventy Skeleton
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/afd45c80-67c8-4a6f-9c21-8860a2d5ea02/deploy-status)](https://app.netlify.com/sites/eleventy-skeleton/deploys)
+![example event parameter](https://github.com/sphars/eleventy-skeleton/actions/workflows/build.yml/badge.svg?event=push)
 
 A simple, basic site template built using [Eleventy](https://www.11ty.dev/) and [YACCK](https://sphars.github.io/yacck/).
 
 ## Demo
-[Demo site on Netlify](https://eleventy-skeleton.netlify.app/)  
-My personal site (coming soon)
+[Demo site on GitHub Pages](https://sphars.github.io/eleventy-skeleton/)  
 
 ## Status
 
