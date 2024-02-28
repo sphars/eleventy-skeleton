@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Eleventy Skeleton</title>
+  <subtitle>Adventures in static site generation.</subtitle>
+  <link href="https://eleventy-skeleton.netlify.app/feed.xml" rel="self"/>
+  <link href="https://eleventy-skeleton.netlify.app/"/>
+  <updated>2020-06-08T00:00:00Z</updated>
+  <id>https://eleventy-skeleton.netlify.app/</id>
+  <author>
+    <name>Spencer Harston</name>
+    <email>spencer314@gmail.com</email>
+  </author>
+  
+  <entry>
+    <title>Example Post</title>
+    <link href="https://eleventy-skeleton.netlify.app/posts/example-post/"/>
+    <updated>2020-06-08T00:00:00Z</updated>
+    <id>https://eleventy-skeleton.netlify.app/posts/example-post/</id>
+    <content type="html">&lt;p&gt;This is an example post, written in Markdown.&lt;/p&gt;
+&lt;p&gt;You can create your posts&#39; content using plain text combined with Markdown syntax.&lt;/p&gt;
+&lt;p&gt;The following is a non-exhaustive example of the basic markup codes and how they render in HTML. See this &lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;Markdown cheatsheet&lt;/a&gt; for more examples and other syntax.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;View markup&lt;/summary&gt;
+&lt;pre&gt;&lt;code&gt;# Heading 1
+## Heading 2
+### Heading 3
+
+---  
+
+This text is **bold**.  
+This text is *italicized*.  
+Here&#39;s a [link](https://www.example.com)  
+
+&amp;gt; This is a blockquote. 
+
+Ordered list
+1. First item
+2. Second item
+3. Third item
+
+Unordered list
+- One
+- Two
+- Three
+
+This is some inline `&amp;lt;code&amp;gt;`
+
+\```
+&amp;lt;p&amp;gt;
+  This is a code block (remove the leading \ )
+&amp;lt;/p&amp;gt;
+\```
+
+### Images  
+![An image of a dog](https://placedog.net/300 &amp;quot;A glorious dog&amp;quot;)  
+
+Your own images can be used by placing them in the `./src/assets/img/posts` directory and linked in your Markdown using `/assets/img/posts/{image}` as the location.
+
+### Tables  
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| Some data 1 | Some data 2 | Some data 3 |
+| Some data 4 | Some data 5 | Some data 6 |
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;This text is &lt;strong&gt;bold&lt;/strong&gt;.&lt;br /&gt;
+This text is &lt;em&gt;italicized&lt;/em&gt;.&lt;br /&gt;
+Here&#39;s a &lt;a href=&quot;https://www.example.com/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ordered list&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Unordered list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One&lt;/li&gt;
+&lt;li&gt;Two&lt;/li&gt;
+&lt;li&gt;Three&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is some inline &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+  This is a code block
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Images&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://placedog.net/400&quot; alt=&quot;An image of a dog&quot; title=&quot;A glorious dog&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Your own images can be used by placing them in the &lt;code&gt;./src/assets/img/posts/&lt;/code&gt; directory and linked in your Markdown using &lt;code&gt;/assets/img/posts/{image}&lt;/code&gt; as the location.&lt;/p&gt;
+&lt;h3&gt;Tables&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column 1&lt;/th&gt;
+&lt;th&gt;Column 2&lt;/th&gt;
+&lt;th&gt;Column 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Some data 1&lt;/td&gt;
+&lt;td&gt;Some data 2&lt;/td&gt;
+&lt;td&gt;Some data 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Some data 4&lt;/td&gt;
+&lt;td&gt;Some data 5&lt;/td&gt;
+&lt;td&gt;Some data 6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+  </entry>
+</feed>

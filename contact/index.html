@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="An Eleventy starter site template focused on simplicity and ease of use.">
+<meta name="author" content="Spencer Harston"/>
+<title>Contact | Eleventy Skeleton</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logos/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logos/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logos/favicon-16x16.png">
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inter&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sphars/yacck/yacck.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css"/>
+</head>
+<body>
+
+    <header>
+    <div>
+        <a href="/"><img src="/assets/img/logos/vector/default-monochrome-white.svg" alt="Eleventy Skeleton"/></a>
+        <p><i>An Eleventy Starter Site</i></p>
+    </div>
+
+    <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/posts/">Posts</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+    </ul>
+</nav>
+    
+</header>
+
+
+    <main>
+        
+<h1>Contact</h1>
+
+<hr/>
+
+<p>This contact page is a good place to put your contact information. As an example, the form below allows visitors to share their email address and thoughts. 
+    Since this site is hosted on Netlify, it uses their forms function to collect that information. 
+    See <a href="https://docs.netlify.com/forms/setup/">Netlify's documentation</a> for more information.</p>
+
+<form name="contact" method="POST" data-netlify="true">
+    <div>    
+        <label for="name">Name</label>   
+        <input type="text" id="name" name="name" autocomplete="name" />
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" autocomplete="email" />
+    </div>
+
+    <div>
+        <label for="thoughts">Thoughts</label>
+        <textarea id="thoughts" rows="5" name="thoughts" placeholder="share your thoughts..."></textarea>
+    </div>
+    
+    <div>
+        <button type="submit">Send</button>
+    </div>
+</form>
+
+    </main>
+
+    <footer>    
+    <div>
+        <p>Built with <a href='https://www.11ty.dev/'>Eleventy &nearr;</a> and <a href="https://sphars.github.io/yacck/">YACCK &nearr;</a></p>
+        <p>&copy; 2020 Spencer Harston | <a href="https://github.com/sphars/eleventy-skeleton">View Source</a></p>
+    </div>
+</footer>
+
+    
+</body>
+</html>

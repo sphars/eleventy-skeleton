@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: CooperHewitt-Semibold
+font link: https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/
+font author: Chester Jenkins
+font author site: https://vllg.com/
+
+
+icon designer: Chris Munroe
+icon designer link: /chrismunroe
+        
+
+fontColor: {"hex":"#25BDD6"}
+bgColor: {"hex":"#13293d"}
+iconColor: {"hex":"#25BDD6"}
+
+Make your own logo at https://www.namecheap.com/logo-maker/
