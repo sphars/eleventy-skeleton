@@ -1,6 +1,6 @@
 # Eleventy Skeleton
 
-![example event parameter](https://github.com/sphars/eleventy-skeleton/actions/workflows/build.yml/badge.svg?event=push)
+![example parameter](https://github.com/sphars/eleventy-skeleton/actions/workflows/build.yml/badge.svg)
 
 A simple, basic site template built using [Eleventy](https://www.11ty.dev/) and [YACCK](https://sphars.github.io/yacck/).
 
