@@ -1,6 +1,5 @@
 const pluginRSS = require('@11ty/eleventy-plugin-rss');
-const moment = require('moment');
-moment.locale('en');
+const { DateTime } = require('luxon');
 
 module.exports = function(eleventyConfig) {
     // allows templates to add additional data
@@ -18,12 +17,12 @@ module.exports = function(eleventyConfig) {
 
     // filter to return a date as ISO string objects
     eleventyConfig.addFilter('dateISO', date => {
-        return moment(date).toISOString();
+        return DateTime.fromJSDate(date).toISO();
     });
 
     // filter to return a date for prettier display. Uses UTC to avoid timezone differences
     eleventyConfig.addFilter('datePretty', date => {
-        return moment(date).utc().format('LL'); // e.g. May 16, 2020
+        return DateTime.fromJSDate(date).toUTC().toLocaleString(DateTime.DATE_FULL); // e.g. May 16, 2020
     });
 
     // filter to sort a list of posts by date desc

@@ -10,7 +10,7 @@
             <i><a href="{{ post.url }}">Read more...</a></i>
         </p>
         <div class="post-list-item-meta">
-            <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time>
+            <time datetime="{{ post.data.date | dateISO }}" title="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time>
             {{ tagsList(post.data.tags) }}
         </div>
     </li>
